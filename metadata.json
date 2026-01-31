@@ -1,0 +1,5 @@
+{
+  "name": "RedMind: Offensive AI Pentester",
+  "description": "An Offensive AI Pentester Tool for Red Teamers, designed to emulate the mindset of a human hacker or security researcher, with a focus on web application security testing. It uses a centralized chat interface to perform vulnerability analysis tasks.",
+  "requestFramePermissions": []
+}

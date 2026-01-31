@@ -1,0 +1,19 @@
+
+My project goal :  Offensive AI Pentester for Redteamer ( web application tool )
+IN the initial stage i want these few task only.
+
+First Task: Should be able to find out the static vulnerability and scan the javascript files via user can upload file and user can direct give the  endpoint ( eg: http://target.com/dummya.js ) and capable to check the security weekness and vulnerabilities like UI client side attacks, Critical Functions etc. create the agent like this 
+You can use agent development kit https://google.github.io/adk-docs/ i will pass the instruction set to this agent in that instruction set written the all the process how to find the all security vulnerabilities. follow these steps 
+Instructions: Go through each function and check if is there any function can use without authetication to get unauthorised data or perform the actions like account takeover, access unauthorised data, login bypass,
+Create agent in python and front end use react.js
+ 
+Second Task:  Should be capable to check the Broken Access Control Vulnerabilities throughout the web application for eg: Admin user functionality is accessible to low privilege user ? by any how ? if i am giving the admin authorizations token/cookies it should be validate with the low privilege user authorizations token/cookies if found any thing accessible which should not allowed for low privilege user should give the vulnerability.
+You can use agent development kit https://google.github.io/adk-docs/
+
+Third Task:  To Check Injection Attack SQL injection, HTML Injection, XSS, Code Injection,Command Injection.
+You can use agent development kit https://google.github.io/adk-docs/
+To check this task request can be POST, GET, TRACE,UPDATE,PUT etc should accept via input fields 
+
+Fourth Task:  Create a common chat for all the above tasks (Like Chat boat it should be centralised to check all the web app vulnerabilities ) along with the separate fetures tasks  
+
+>> 1. Write the Script on the above 2. Now tell what i have to do step by step from scratch and basics i want everything from basic to finish Offensive AI Pentester  web application  my college project also 

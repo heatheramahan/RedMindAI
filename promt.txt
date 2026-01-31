@@ -1,0 +1,81 @@
+Project Goal:  
+Develop an Offensive AI Pentester tool for Red Teamers, focused on web application security testing.
+
+Initial Stage Tasks:
+Implement functionality to detect static vulnerabilities in JavaScript files.
+Allow users to either:
+Upload JavaScript files directly, or
+Provide an endpoint (e.g., http://target.com/dummya.js) for scanning.
+The agent should analyze the files for potential security weaknesses and vulnerabilities, including:
+Client-side attacks (UI-related issues)
+Critical functions that may expose sensitive operations
+Agent Development:
+Use the Agent Development Kit (ADK) documentation to build the agent.
+The agent will follow a provided instruction set, which defines the process for identifying vulnerabilities.
+Instructions include:
+Reviewing each function in the JavaScript file
+Checking for functions that can be executed without authentication
+Identifying risks such as:
+Unauthorized data access
+Account takeover
+Login bypass
+Technology Stack:
+Backend: Python (for agent implementation)
+Frontend: React.js  (for user interface)
+
+Second Task:  
+The agent should be capable of detecting Broken Access Control vulnerabilities across the web application.
+Example: Verify whether admin-level functionality is accessible to a low-privilege user.
+The agent should test scenarios where:
+An admin authorization token/cookie is compared against a low-privilege user’s token/cookie.
+If any functionality or resource intended only for admin users is accessible with a low-privilege token/cookie, the agent must flag this as a vulnerability.
+Implementation Notes:
+Use the Agent Development Kit (ADK) to build the agent.
+The agent should automate:
+Validation of authorization tokens/cookies.
+Detection of unauthorized access attempts.
+Reporting of any endpoints or actions that bypass proper access control.
+
+Third Task:  
+The agent should be capable of detecting Injection Attacks within the web application.
+
+Types of injection vulnerabilities to check include:
+
+SQL Injection
+
+HTML Injection
+
+Cross-Site Scripting (XSS)
+
+Code Injection
+
+Command Injection
+
+The agent must support testing across multiple HTTP request methods, including:
+
+POST
+
+GET
+
+TRACE
+
+UPDATE
+
+PUT
+
+Input fields should be used to accept and process these requests for vulnerability testing.
+
+Use the Agent Development Kit (ADK) to build the agent and automate detection.
+
+Fourth Task:  
+Create a centralized chat interface (similar to a chatbot) that integrates all the above tasks.
+
+The chat should serve as a single entry point for checking web application vulnerabilities.
+
+It must provide:
+
+Centralized access to all scanning tasks.
+
+Separate features for each specific task (e.g., static analysis, broken access control, injection attacks).
+
+The chatbot should allow users to interact naturally while the agent executes the appropriate vulnerability checks in the background.

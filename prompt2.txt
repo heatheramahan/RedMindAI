@@ -1,0 +1,176 @@
+Develop an Offensive AI Pentester Tool for Red Teamers, designed to emulate the mindset of a human hacker or security researcher, with a focus on web application security testing.
+
+🚀 Initial Stage Tasks
+Task 1: Static Vulnerability Detection in JavaScript
+Detect static vulnerabilities in JavaScript files.
+
+Input options:
+
+File Upload (users upload JS,TXT, jsp, tps, .ts etc files).
+
+Endpoint Scan (e.g., http://target.com/dummya.js).
+
+Analyze files for:
+
+Client-side attacks (UI-related issues).
+
+Critical functions exposing sensitive operations.
+
+Agent Development Notes:
+
+Use Agent Development Kit (ADK).
+
+Instruction set includes:
+
+Review each function.
+
+Check for unauthenticated execution.
+
+Identify risks: unauthorized data access, account takeover, login bypass.
+
+Technology Stack:
+
+Backend: Python
+
+Frontend: React.js
+
+Task 2: Broken Access Control Detection:
+
+Detect Broken Access Control vulnerabilities. if researcher giving 100_ API's Endpoint and want to test broken access control vulnerabilities want to verify whether normal user able to access the admin endpoint through out all the endpoints
+Flag vulnerabilities without authentication any after login API enpoint is accessible.
+
+Example: Verify if admin functionality is accessible to low-privilege users.
+Compare admin tokens/cookies vs low-privilege tokens/cookies.
+Flag vulnerabilities if restricted functionality is accessible  to low privilege user. 
+
+Implementation Notes:
+Use ADK.
+Automate:
+Token/cookie validation.
+Unauthorized access detection.
+Endpoint reporting.
+
+
+Task 3: Injection Attack Detection
+Detect Injection Attacks:
+
+SQL Injection , Blind, Time based, Boolean Based. etc
+
+HTML Injection
+
+Cross-Site Scripting (XSS)
+
+Code Injection
+
+Command Injection
+
+Request Methods Supported:
+
+POST, GET, TRACE, UPDATE, PUT
+
+Implementation Notes:
+
+Input fields should accept and process these request types.
+
+Use ADK to automate detection and reporting.
+
+Task 4: Centralized Chat Interface
+Create a chatbot-style interface that integrates all tasks.
+
+Features:
+
+Single entry point for vulnerability testing.
+
+Separate modules for each task.
+
+Natural user interaction while agent executes checks in the background.
+
+🔮 Future Enhancements
+Dynamic Analysis:
+
+Simulate real-world attack scenarios.
+
+Execute payloads dynamically against live endpoints.
+
+Detect runtime vulnerabilities beyond static code analysis.
+
+Advanced Reporting:
+
+Generate detailed vulnerability reports (PDF/HTML).
+
+Include severity ratings, exploitability, and remediation guidance.
+
+Integration with Security Frameworks:
+
+Align findings with MITRE ATLAS (Adversarial Threat Landscape for Artificial-Intelligence Systems).
+
+Map vulnerabilities to OWASP Top 10 categories.
+
+Ensure compatibility with practical web app pentest methodologies.
+
+Burp Suite Integration:
+
+Accept HTTP requests/responses directly from Burp Suite.
+
+Analyze them for vulnerabilities using a human-like red team approach.
+
+Provide insights similar to how a skilled pentester would manually test.
+
+Expanded Dynamic Testing:
+
+Detect logic flaws, privilege escalation, and chained exploits.
+
+Support fuzzing and automated payload generation.
+
+Fifth Task: Diagram & Image-Based Vulnerability Analysis
+The agent should be capable of analyzing uploaded diagrams and images (e.g., dataflow diagrams, network diagrams, architecture charts) to identify potential dynamic vulnerabilities.
+
+Objectives:
+
+Accept uploads of diagrams/images (e.g., .png, .jpg, .jpeg, .svg, .pdf).
+
+Interpret the diagram structure to understand:
+
+Data flows between components.
+
+Trust boundaries (internal vs external zones).
+
+Network architecture (servers, firewalls, endpoints, APIs).
+
+Apply reasoning like a human hacker/red teamer to detect:
+
+Missing or weak authentication between components.
+
+Unencrypted communication channels.
+
+Exposed admin interfaces.
+
+Misconfigured firewalls or open ports.
+
+Potential privilege escalation paths.
+
+Cross-check diagram findings with dynamic analysis logic (e.g., if a Burp Suite HTTP request/response is provided, correlate it with the diagram to find exploitable flows).
+
+Implementation Notes:
+
+Use the Agent Development Kit (ADK) for agent logic.
+
+Backend (Python):
+
+Use OCR/diagram parsing libraries (OpenCV, Tesseract, networkx) to extract nodes, flows, and labels.
+
+Apply vulnerability reasoning rules (similar to STRIDE/OWASP threat modeling).
+
+Frontend (React.js):
+
+Upload interface for diagrams.
+
+Visualization of detected vulnerabilities mapped onto the diagram.
+
+Expected Outcome:
+
+The agent should think like a red teamer when reviewing diagrams.
+
+If a target.com  dataflow diagram or network diagram is uploaded, the agent should highlight possible vulnerabilities (e.g., “Unencrypted traffic between web server and database”, “Admin panel exposed to public network”).
+
+When combined with Burp Suite HTTP requests/responses, the agent should correlate diagram insights with live traffic to uncover real exploitable paths.
